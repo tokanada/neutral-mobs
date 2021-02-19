@@ -29,73 +29,22 @@ def versions = [
 		"1.16.1": new Version("1.16.1+build.21", "0.10.6+build.214", "0.18.0+build.387-1.16.1", {
 			project ->
 				project.modCompile "com.google.code.findbugs:jsr305:3.0.2"
-				project.modApi("me.shedaniel.cloth:config-2:4.8.1") {
-					exclude(group: "net.fabricmc.fabric-api")
-				}
-
-				project.modImplementation("io.github.prospector:modmenu:1.14.6+build.31") {
-					exclude module: "fabric-api"
-				}
-
-				project.include "me.shedaniel.cloth:config-2:4.8.1"
 		}),
 		"1.16.2": new Version("1.16.2+build.47", "0.9.3+build.207", "0.21.0+build.407-1.16", {
 			project ->
 				project.modCompile "com.google.code.findbugs:jsr305:3.0.2"
-				project.modApi("me.shedaniel.cloth:config-2:4.8.1") {
-					exclude(group: "net.fabricmc.fabric-api")
-				}
-
-				project.modImplementation("io.github.prospector:modmenu:1.14.6+build.31") {
-					exclude module: "fabric-api"
-				}
-
-				project.include "me.shedaniel.cloth:config-2:4.8.1"
 		}),
 		"1.16.3": new Version("1.16.3+build.17", "0.10.0+build.208", "0.22.1+build.409-1.16", {
 			project ->
 				project.modCompile "com.google.code.findbugs:jsr305:3.0.2"
-				project.modApi("me.shedaniel.cloth:config-2:4.8.1") {
-					exclude(group: "net.fabricmc.fabric-api")
-				}
-
-				project.modImplementation("io.github.prospector:modmenu:1.14.6+build.31") {
-					exclude module: "fabric-api"
-				}
-
-				project.include "me.shedaniel.cloth:config-2:4.8.1"
 		}),
 		"1.16.4": new Version("1.16.4+build.7", "0.10.8", "0.26.0+1.16", {
 			project ->
 				project.modCompile "com.google.code.findbugs:jsr305:3.0.2"
-				project.modApi("me.shedaniel.cloth:config-2:4.8.1") {
-					exclude(group: "net.fabricmc.fabric-api")
-				}
-
-				project.modImplementation("io.github.prospector:modmenu:1.14.6+build.31") {
-					exclude module: "fabric-api"
-				}
-
-				project.include "me.shedaniel.cloth:config-2:4.8.1"
-
-				// replace OptiFabric:<version> with latest version on https://www.curseforge.com/minecraft/mc-mods/optifabric/files that fits your MC version
-				project.modCompile "com.github.Chocohead:OptiFabric:llama-SNAPSHOT"
-
-				//Deps required for optifabric
-				project.compile "org.zeroturnaround:zt-zip:1.14"
 		}),
 		"1.16.5": new Version("1.16.5+build.4", "0.11.1", "0.30.0+1.16", {
 			project ->
 				project.modCompile "com.google.code.findbugs:jsr305:3.0.2"
-				project.modApi("me.shedaniel.cloth:config-2:4.8.1") {
-					exclude(group: "net.fabricmc.fabric-api")
-				}
-
-				project.modImplementation("io.github.prospector:modmenu:1.14.6+build.31") {
-					exclude module: "fabric-api"
-				}
-
-				project.include "me.shedaniel.cloth:config-2:4.8.1"
 		})
 		//
 //                mappings      : [
@@ -105,7 +54,7 @@ def versions = [
 //                ],
 ]
 
-archivesBaseName = "pacifist-mobs"
+archivesBaseName = "neutral-mobs"
 group = "net.orandja"
 version = "0.0.1"
 def suffix = ""
