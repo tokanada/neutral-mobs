@@ -29,29 +29,38 @@ def versions = [
 		"1.16.1": new Version("1.16.1+build.21", "0.10.6+build.214", "0.18.0+build.387-1.16.1", {
 			project ->
 				project.modCompile "com.google.code.findbugs:jsr305:3.0.2"
+				project.modImplementation("io.github.prospector:modmenu:1.14.6+build.31") {
+					exclude module: "fabric-api"
+				}
 		}),
 		"1.16.2": new Version("1.16.2+build.47", "0.9.3+build.207", "0.21.0+build.407-1.16", {
 			project ->
 				project.modCompile "com.google.code.findbugs:jsr305:3.0.2"
+				project.modImplementation("io.github.prospector:modmenu:1.14.6+build.31") {
+					exclude module: "fabric-api"
+				}
 		}),
 		"1.16.3": new Version("1.16.3+build.17", "0.10.0+build.208", "0.22.1+build.409-1.16", {
 			project ->
 				project.modCompile "com.google.code.findbugs:jsr305:3.0.2"
+				project.modImplementation("io.github.prospector:modmenu:1.14.6+build.31") {
+					exclude module: "fabric-api"
+				}
 		}),
 		"1.16.4": new Version("1.16.4+build.7", "0.10.8", "0.26.0+1.16", {
 			project ->
 				project.modCompile "com.google.code.findbugs:jsr305:3.0.2"
+				project.modImplementation("io.github.prospector:modmenu:1.14.6+build.31") {
+					exclude module: "fabric-api"
+				}
 		}),
 		"1.16.5": new Version("1.16.5+build.4", "0.11.1", "0.30.0+1.16", {
 			project ->
 				project.modCompile "com.google.code.findbugs:jsr305:3.0.2"
+				project.modImplementation("io.github.prospector:modmenu:1.14.6+build.31") {
+					exclude module: "fabric-api"
+				}
 		})
-		//
-//                mappings      : [
-//                        "net/orandja/shoukatweaks/mixin/RebuildTaskMixin": [
-//                                "render": "Lnet/minecraft/class_846\$class_851\$class_4578;method_22785(FFFLnet/minecraft/class_846\$class_849;Lnet/minecraft/class_750;)Ljava/util/Set;"
-//                        ]
-//                ],
 ]
 
 archivesBaseName = "neutral-mobs"
