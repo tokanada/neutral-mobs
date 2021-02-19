@@ -9,7 +9,7 @@ import net.minecraft.entity.boss.dragon.EnderDragonEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.orandja.neutralmobs.PacifistMobs;
+import net.orandja.neutralmobs.NeutralMobs;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -43,6 +43,6 @@ public abstract class FollowTargetGoalMixin extends TrackTargetGoal {
     public boolean isPassive() {
         return !(this.mob instanceof EnderDragonEntity || this.mob instanceof WitherEntity) &&
                 (this.targetClass == PlayerEntity.class || this.targetClass == ServerPlayerEntity.class) &&
-                (this.mob.world.getGameRules().get(PacifistMobs.PASSIVE_MOBS).get() && this.targetClass == PlayerEntity.class);
+                (this.mob.world.getGameRules().get(NeutralMobs.PASSIVE_MOBS).get() && this.targetClass == PlayerEntity.class);
     }
 }

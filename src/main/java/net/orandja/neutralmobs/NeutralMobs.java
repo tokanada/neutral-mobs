@@ -6,7 +6,7 @@ import net.orandja.mcutils.QuickUtils;
 
 import java.lang.reflect.Method;
 
-public class PacifistMobs implements ModInitializer {
+public class NeutralMobs implements ModInitializer {
 
     public static GameRules.Key<GameRules.BooleanRule> PASSIVE_MOBS;
 
@@ -14,6 +14,6 @@ public class PacifistMobs implements ModInitializer {
     public void onInitialize() {
         Method registerM = QuickUtils.quickStaticMethod(GameRules.class, String.class, GameRules.Category.class, GameRules.Type.class);
         Method createM = QuickUtils.quickStaticMethod(GameRules.BooleanRule.class, boolean.class);
-        PASSIVE_MOBS = QuickUtils.<GameRules.Key>quickInvoke(registerM, null, "passiveMobs", GameRules.Category.MOBS, QuickUtils.quickInvoke(createM, null, false));
+        PASSIVE_MOBS = QuickUtils.<GameRules.Key>quickInvoke(registerM, null, "neutralMobs", GameRules.Category.MOBS, QuickUtils.quickInvoke(createM, null, false));
     }
 }
