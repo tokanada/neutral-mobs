@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.orandja.neutralmobs.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "FollowTargetGoalMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

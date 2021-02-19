@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "neutral-mobs",
+  "version": "${version}",
+
+  "name": "Neutral Mobs",
+  "description": "Aggresive mobs become neutral.",
+  "authors": [
+    "Olivier \"ShoukaSeikyo\" Martinez"
+  ],
+  "contact": {
+    "homepage": "https://shoukaseikyo.fr"
+  },
+
+  "license": "ALL RIGHTS RESERVED",
+  "icon": "assets/passivemobs/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.orandja.neutralmobs.NeutralMobs"
+    ]
+  },
+  "mixins": [
+    "pc.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  }
+}
