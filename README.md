@@ -1,9 +1,13 @@
-# Fabric Example Mod
+# Neutral Mobs
 
-## Setup
+Makes aggressives mobs like Zombies, Skeletons or Creepers become neutral. They will only attack and chase you when you attack them.
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+## GameRule
 
-## License
+```/gamerule neutralMobs true|false``` enables or disables this feature in the world if required.
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## F.A.Q.
+
+### Why does this even exist ? Isn't Minecraft easy ?
+
+My girlfriend wanted to play with mobs, but didn't want to get attacked all the times.
